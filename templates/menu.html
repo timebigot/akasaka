@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+    {% for cat in cats %}
+        <h3>{{ cat }}</h3>
+        <ul class="list-group">
+        {% for item in cat.menu_set.all %}
+            <li class="list-group-item">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{ item.item_name }}</h4>
+                        <p>{{ item.detail }}</p>
+                        <p>{{ item.price }}</p>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+    </div>
+{% endblock %}
