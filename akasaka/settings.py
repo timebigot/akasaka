@@ -54,7 +54,7 @@ MIDDLEWARE_CLASSES = [
 ROOT_URLCONF = 'akasaka.urls'
 
 TEMPLATES_PATH = os.path.join(BASE_DIR, 'templates')
-print(TEMPLATES_PATH)
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -111,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'EST'
 
 USE_I18N = True
 
@@ -124,8 +124,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_PATH = os.path.join(BASE_DIR, 'static')
-print(STATIC_PATH)
+
 STATIC_URL = '/static/'
-STATICFILE_DIRS = [
-    STATIC_PATH,
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/var/www/static/',
 ]
