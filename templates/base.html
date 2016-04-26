@@ -8,6 +8,7 @@
 
         <title>Akasaka</title>
 
+<<<<<<< HEAD:templates/index.html
         <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css">
@@ -16,6 +17,12 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" async></script>
 		<link rel="stylesheet" href="{% static 'css/style.css' %}">
 		
+=======
+        {% load staticfiles %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+>>>>>>> origin/master:templates/base.html
     </head>
 
     <body>
@@ -24,8 +31,8 @@
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                              data-target="collapse-menu"
-                                              aria-expanded="false">
+                                                                              data-target="collapse-menu"
+                                                                              aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span
@@ -47,6 +54,7 @@
                 </div>
             </nav>
         </header>
+<<<<<<< HEAD:templates/index.html
             <div class="container-fluid">
 				<div class="gradient">
 				</div>
@@ -58,6 +66,12 @@
 					</div>
 			</div>
 						
+=======
+
+        {% block content %}
+        {% endblock %}
+
+>>>>>>> origin/master:templates/base.html
         <footer>
             <div class="container">
                 <div class="row">
@@ -65,10 +79,10 @@
                         <b>Contact</b>
                         <div class="footer-content">
                             <i class="fa fa-phone"
-                                aria-hidden="true"></i> 703-361-0111
-                            <br>
-                            <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                            10788 Sudley Manor Dr, Manassass, VA 20109
+                               aria-hidden="true"></i> 703-361-0111
+                           <br>
+                           <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                           10788 Sudley Manor Dr, Manassass, VA 20109
 
                         </div>
                     </div>
@@ -77,9 +91,9 @@
                         <div class="footer-content">
                             <a href="http://facebook.com/akasakajs">
                                 <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x
-                                fa-inverse"></i>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x
+                                    fa-inverse"></i>
                                 </span>
                             </a>
                             <a href="http://twitter.com/akasakava">
@@ -90,7 +104,7 @@
                                 </span>
                             </a>
                             <a
-                                href="https://plus.google.com/108644926335098395419/about?hl=en&gl=us">
+                                       href="https://plus.google.com/108644926335098395419/about?hl=en&gl=us">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-google-plus fa-stack-1x
@@ -123,4 +137,3 @@
                 src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </body>
 </html>
-
