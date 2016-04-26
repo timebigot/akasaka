@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,11 +8,14 @@
 
         <title>Akasaka</title>
 
-        {% load staticfiles %}
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css">
+        <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" type="text/css"> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" async></script>
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		
     </head>
 
     <body>
@@ -43,11 +47,17 @@
                 </div>
             </nav>
         </header>
-        <div class="jumbotron">
-            <div class="container">
-            </div>
-        </div>
-
+            <div class="container-fluid">
+				<div class="gradient">
+				</div>
+					<div class="fotorama"
+						data-width="100%"
+						data-ratio="800/600" data-fit="contain">
+						<img src="{% static "img/1.jpg" %}"/>
+						<img src="{% static "img/2.jpg" %}"/>
+					</div>
+			</div>
+						
         <footer>
             <div class="container">
                 <div class="row">
