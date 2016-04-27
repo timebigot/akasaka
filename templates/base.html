@@ -1,5 +1,4 @@
-{% load staticfiles %}
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -8,21 +7,15 @@
 
         <title>Akasaka</title>
 
-<<<<<<< HEAD:templates/index.html
-        <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css">
-        <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" type="text/css"> 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" async></script>
-		<link rel="stylesheet" href="{% static 'css/style.css' %}">
-		
-=======
         {% load staticfiles %}
+        <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" type="text/css"> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" async></script>
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
->>>>>>> origin/master:templates/base.html
+        {% block index_style %}{% endblock %}
     </head>
 
     <body>
@@ -30,9 +23,7 @@
             <nav class="navbar navbar-inverse">
                 <div class="container">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                                                              data-target="collapse-menu"
-                                                                              aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="collapse-menu" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span
@@ -40,38 +31,24 @@
                             <span
                                   class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">
-                            <img alt="Brand" src="{% static 'img/logo.png' %}">
+                        <a class="navbar-brand" href="/">
+                            <img alt="Akasaka" src="{% static 'img/logo.png' %}">
                         </a>
                     </div>
                     <div class="collapse navbar-collapse" id="collapse-menu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li role="presentation"><a href="#"><b>Home</b></a></li>
-                            <li role="presentation"><a href="#"><b>Menu</b></a></li>
+                            <li role="presentation"><a href="/"><b>Home</b></a></li>
+                            <li role="presentation"><a href="/menu"><b>Menu</b></a></li>
                         </ul>
                     </div>
 
                 </div>
             </nav>
         </header>
-<<<<<<< HEAD:templates/index.html
-            <div class="container-fluid">
-				<div class="gradient">
-				</div>
-					<div class="fotorama"
-						data-width="100%"
-						data-ratio="800/600" data-fit="contain">
-						<img src="{% static "img/1.jpg" %}"/>
-						<img src="{% static "img/2.jpg" %}"/>
-					</div>
-			</div>
-						
-=======
 
         {% block content %}
         {% endblock %}
 
->>>>>>> origin/master:templates/base.html
         <footer>
             <div class="container">
                 <div class="row">
