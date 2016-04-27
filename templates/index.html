@@ -1,11 +1,7 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
-<DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD
         <title>Akasaka</title>
 
         <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
@@ -124,4 +120,20 @@
                 src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </body>
 </html>
+=======
+{% block index_style %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+>>>>>>> origin/master
 
+{% block content %}
+    <div class="container-fluid">
+        <div class="gradient"></div>
+        <div class="fotorama"
+            data-width="100%"
+            data-ratio="800/600" data-fit="contain">
+            <img src="{% static "img/1.jpg" %}"/>
+            <img src="{% static "img/2.jpg" %}"/>
+        </div>
+    </div>
+{% endblock %}
