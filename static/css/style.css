@@ -3,6 +3,12 @@ nav {
     height: 100px;
     z-index: 3;
 }
+.navbar-brand>img {
+    width: 60%;
+}
+.in {
+    background-color: #222;
+}
 .navbar-inverse .navbar-nav>li>a {
     color: white;
 }
@@ -42,6 +48,19 @@ body {
 }
 .fotorama_wrap {
     z-index: 1;
+}
+.fotorama-img {
+    text-align: center;
+    height: 100%;
+    padding-top: 100px;
+    color: white;
+}
+.jumbotron {
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 /*footer*/
