@@ -23,6 +23,7 @@ body {
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
+	position: relative;
 }
 .fotorama {
     position: relative;
@@ -31,9 +32,19 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 120px;
-    background: -webkit-linear-gradient(black, transparent);
+    height: 25%;
+    background: linear-gradient(#2F2C2C, transparent);
     z-index: 2;
+	opacity: .5;
+}
+.gradient1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(transparent, #332B33);
+    z-index: 2;
+	opacity: .15;
 }
 
 /* Dots inside the fotorama container */
