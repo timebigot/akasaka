@@ -11,8 +11,12 @@ nav {
 }
 .navbar-inverse .navbar-nav>li>a {
     color: white;
+	font-size: 120%;
 }
-
+.fa {
+	display: block;
+	text-align: center;
+}
 /*body*/
 body {
     margin: 0;
