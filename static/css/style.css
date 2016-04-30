@@ -3,8 +3,12 @@ nav {
     height: 100px;
     z-index: 3;
 }
+.navbar-brand {
+	padding: 25px 15px;
+	padding-left: 35px;
+}
 .navbar-brand>img {
-    width: 60%;
+    width: 100%;
 }
 .in {
     background-color: #222;
@@ -13,9 +17,14 @@ nav {
     color: white;
 	font-size: 120%;
 }
+.navbar-nav {
+	margin-right: 100px;
+	margin: 16px 0 0;
+}
 .fa {
-	display: block;
+	display: inline;
 	text-align: center;
+	letter-spacing: .5em;
 }
 /*body*/
 body {
@@ -55,6 +64,11 @@ body {
 .fotorama__nav {
     margin-top: -31px;
 }
+.fotorama__nav--dots {
+	display: block;
+	bottom: 10%;
+	position: absolute;
+}
 .fotorama__dot {
     border: 3px solid #F1DFDF;
     width: 10px;
@@ -73,7 +87,7 @@ body {
 .jumbotron {
     background-color: transparent;
     position: fixed;
-    bottom: 0;
+    bottom: 15%;
     right: 0;
     left: 0;
 }
