@@ -92,6 +92,11 @@ body {
     left: 0;
 }
 
+/*menu*/
+.media-object {
+    height: 70px;
+    width: 70px;
+
 /*footer*/
 footer {
     background-color: #222;
