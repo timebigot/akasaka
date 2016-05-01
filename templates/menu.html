@@ -7,11 +7,12 @@
         <ul class="list-group">
         {% for item in cat.menu_set.all %}
             {% load staticfiles %}
+            {% load functions %}
             <li class="list-group-item">
                 <div class="media">
                     <div class="media-left">
                         <a href="#">
-                            <img class="media-object" src="{% static 'img/menu' %}/{{ item.image }}">
+                            <img class="media-object" src="{% static 'img/menu' %}/{{ item.item_name|imager }}.jpg">
                         </a>
                     </div>
                     <div class="media-body">

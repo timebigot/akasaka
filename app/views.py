@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Category, Menu
+import re
 
 def index(request):
     context = {}
