@@ -1,101 +1,48 @@
 /*header*/
-nav {
-    height: 100px;
-    z-index: 3;
-}
-.navbar-brand {
-	padding: 25px 15px;
-	padding-left: 35px;
-}
-.navbar-brand>img {
-    width: 100%;
-}
-.in {
+header {
     background-color: #222;
 }
-.navbar-inverse .navbar-nav>li>a {
+.nav-pills>li>a {
     color: white;
-	font-size: 120%;
 }
-.navbar-nav {
-	margin-right: 100px;
-	margin: 16px 0 0;
+.nav-pills>li>a:hover {
+    background-color: transparent;
 }
-.fa {
-	display: inline;
-	text-align: center;
-	letter-spacing: .5em;
+.navbar-menu>button {
+    background-color: #222;
+    margin-top: 25px;
+}
+.navbar-menu>button:hover {
+    background-color: transparent;
+}
+.navbar-menu>button:active {
+    background-color: transparent;
+}
+.navbar-menu>button>i {
+    color: white;
+}
+.navbar-menu>.dropdown-menu {
+    background-color: #222;
+}
+.navbar-menu>.dropdown-menu>li>a {
+    color: white;
+}
+.navbar-menu>.dropdown-menu>li>a:hover {
+    color: black;
 }
 /*body*/
-body {
-    margin: 0;
-    height: 100%;
+.carousel-inner>.item>img {
     width: 100%;
-    padding: 0;
 }
-.container-fluid {
-    padding-right: 0;
-    padding-left: 0;
-	position: relative;
-}
-.fotorama {
-    position: relative;
-}
-.gradient {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 25%;
-    background: linear-gradient(#2F2C2C, transparent);
-    z-index: 2;
-	opacity: .5;
-}
-.gradient1 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 30%;
-    background: linear-gradient(transparent, #332B33);
-    z-index: 2;
-	opacity: .15;
-}
-
-/* Dots inside the fotorama container */
-.fotorama__nav {
-    margin-top: -31px;
-}
-.fotorama__nav--dots {
-	display: block;
-	bottom: 10%;
-	position: absolute;
-}
-.fotorama__dot {
-    border: 3px solid #F1DFDF;
-    width: 10px;
-    height: 10px;
-    top: 0px;
-}
-.fotorama_wrap {
-    z-index: 1;
-}
-.fotorama-img {
-    text-align: center;
-    height: 100%;
-    padding-top: 100px;
-    color: white;
-}
-.jumbotron {
-    background-color: transparent;
-    position: fixed;
-    bottom: 15%;
-    right: 0;
-    left: 0;
-}
-
 /*menu*/
+.menu-buttons {
+    text-align: center;
+    margin-top: 15px;
+}
 .media-object {
     height: 70px;
     width: 70px;
+}
 
 /*footer*/
 footer {
@@ -113,11 +60,3 @@ footer>.container>.row>div {
 .fa-circle {
     color: #c0392b;
 }
-
-
-
-
-
-
-
-
