@@ -9,31 +9,35 @@
     </div>
 </div>
 <div class="container">
-    {% for cat in cats %}
-    <div class="page-header">
-        <h3 id="{{ cat }}">{{ cat }} <small><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i>
-                </a></small></h3>
-    </div>
-    <ul class="list-group">
-        {% for item in cat.menu_set.all %}
-        {% load staticfiles %}
-        {% load functions %}
-        <li class="list-group-item">
-            <div class="media">
-                <div class="media-left">
-                    <a href="#">
-                        <img class="media-object" src="{% static 'img/menu' %}/{{ item.item_name|imager }}.jpg">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">{{ item.item_name }}</h4>
-                    <p>{{ item.detail }}</p>
-                    <p>{{ item.price }}</p>
-                </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            {% for cat in cats %}
+            <div class="page-header">
+                <h3 id="{{ cat }}">{{ cat }} <small><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+                        </a></small></h3>
             </div>
-        </li>
-        {% endfor %}
-    </ul>
-    {% endfor %}
+            <ul class="list-group">
+                {% for item in cat.menu_set.all %}
+                {% load staticfiles %}
+                {% load functions %}
+                <li class="list-group-item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="{% static 'img/menu' %}/{{ item.item_name|imager }}.jpg">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">{{ item.item_name }}</h4>
+                            <p>{{ item.detail }}</p>
+                            <p>{{ item.price }}</p>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 {% endblock %}

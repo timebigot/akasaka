@@ -10,3 +10,6 @@ def menu(request):
     cats = Category.objects.order_by('id')
     context = {'cats': cats}
     return render(request, 'menu.html', context)
+
+def about(request):
+    return render(request, 'about.html')
