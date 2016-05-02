@@ -93,17 +93,17 @@ html, body {
 }
 
 .carousel .carousel-inner .bg1 {
-	background-image: url(http://img.enkivillage.com/s/upload/images/2014/12/acb06f7149cb77b42e8a8d8c12c410cc.jpg);
+	background-image: url(img1.jpg);
 	background-position: center center;
 }
 
 .carousel .carousel-inner .bg2 {
-	background-image: url(http://img.enkivillage.com/s/upload/images/2014/12/acb06f7149cb77b42e8a8d8c12c410cc.jpg);
+	background-image: url(img2.jpg);
 	background-position: center center;
 }
 
 .carousel .carousel-inner .bg3 {
-	background-image: url(http://img.enkivillage.com/s/upload/images/2014/12/acb06f7149cb77b42e8a8d8c12c410cc.jpg);
+	background-image: url(img3.jpg);
 	background-position: center center;
 }
 /* RESPONSIVE CSS */
