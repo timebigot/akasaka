@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Akasaka</title>
+
+        {% load staticfiles %}
+        <link rel="shortcut icon" href="{%  static 'img/favicon.ico' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" type="text/css"> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js" async></script>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link href="carousel.css" rel="stylesheet">
+        {% block index_style %}{% endblock %}
+    
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+	<div class="navbar-wrapper">
+		<div class="container">
+
+			<nav class="navbar navbar-inverse navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed"
+							data-toggle="collapse" data-target="#navbar"
+							aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/">
+                            <img alt="Akasaka" class="img-responsive" src="{% static 'img/logo.png' %}">
+                        </a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="/">Home</a></li>
+							<li><a href="/menu">Menu</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle"
+								data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/">Newsletter</a></li>
+									<li><a href="/">About</a></li>
+								</ul></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+		</div>
+	</div>
+
+
+        {% block content %}
+        {% endblock %}
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <b>Contact</b>
+                        <div class="footer-content">
+                            <i class="fa fa-phone" aria-hidden="true"></i> 703-361-0111
+                            <br>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                            10788 Sudley Manor Dr, Manassass, VA 20109
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <b>Follow us</b>
+                        <div class="footer-content">
+                            <a href="https://www.facebook.com/akasakajs" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.twitter.com/akasakava" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://plus.google.com/108644926335098395419/about?hl=en&gl=us" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="http://www.yelp.com/biz/akasaka-sushi-and-steak-manassas" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-yelp fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <b>Hours</b>
+                        <div class="footer-content">
+                            <p>
+                            Mon-Thu: 11:30am - 2:30pm, 4:30pm -
+                            9:30pm<br />
+                            Friday: 11:30am - 2:30pm, 4:30pm -
+                            10pm<br />
+                            Saturday: 12pm - 10pm<br />
+                            Sunday: 12pm - 9pm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>
