@@ -50,6 +50,11 @@ body {
     width: 70px;
 }
 
+/*modal*/
+.img-responsive {
+    width: 100%;
+}
+
 /*footer*/
 footer {
     background-color: #222;
