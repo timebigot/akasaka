@@ -19,9 +19,9 @@ body {
 	padding-top: 50px;
 }
 .nav>li {
-	right: 49px;
-	float: left;
-	display: inline-block;
+	right: 33px;
+	float: none;
+	display: table-cell;
 }
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper>.container {
@@ -67,6 +67,7 @@ body {
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
 	border-color: transparent;
+	border: none;
 }
 /* CUSTOMIZE THE CAROUSEL */
 html, body {
@@ -113,6 +114,18 @@ html, body {
 .carousel .carousel-inner .bg3 {
 	background-image: url(img3.jpg);
 	background-position: center center;
+}
+.input-group .form-control, .input-group-addon, .input-group-btn {
+	margin-bottom: 40px;
+}
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+	margin-bottom: 40px;
+}
+.news {
+	margin-bottom: 28px;
+}
+.yelp {
+	font-size: 25px;
 }
 /* RESPONSIVE CSS */
 @media ( min-width : 768px) {
