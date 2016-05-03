@@ -8,6 +8,9 @@ header {
 .nav-pills>li>a:hover {
     background-color: transparent;
 }
+.nav-pills>li>a:focus {
+    background-color: transparent;
+}
 .navbar-menu>button {
     background-color: #222;
     margin-top: 25px;
@@ -31,6 +34,9 @@ header {
     color: black;
 }
 /*body*/
+body {
+    background-color: #eee;
+}
 .carousel-inner>.item>img {
     width: 100%;
 }

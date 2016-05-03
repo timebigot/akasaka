@@ -4,7 +4,7 @@
 <div class="menu-buttons">
     <div class="btn-group" role="group" aria-label="...">
         {% for cat in cats %}
-        <a role="button" class="btn btn-default" href="#{{ cat }}">{{ cat }}</a>
+        <a role="button" class="btn btn-default" href="#{{ cat }}"><b>{{ cat }}</b></a>
         {% endfor %}
     </div>
 </div>
@@ -23,9 +23,7 @@
                 <li class="list-group-item">
                     <div class="media">
                         <div class="media-left">
-                            <a href="#">
-                                <img class="media-object" src="{% static 'img/menu' %}/{{ item.item_name|imager }}.jpg">
-                            </a>
+                            <img class="media-object" src="{% static 'img/menu' %}/{{ item.item_name|imager }}.jpg">
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">{{ item.item_name }}</h4>
