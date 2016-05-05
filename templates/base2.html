@@ -25,23 +25,26 @@
                     <nav class="navbar navbar-inverse navbar-static-top">
                         <div class="container">
                             <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed"
-                                                      data-toggle="collapse" data-target="#navbar"
-                                                                             aria-expanded="false" aria-controls="navbar">
-                                    <span class="sr-only">Toggle navigation</span> <span
-                                          class="icon-bar"></span> <span class="icon-bar"></span> <span
-                                                                         class="icon-bar"></span>
-                                </button>
                                 <a class="navbar-brand" href="/">
                                     <img alt="Akasaka" class="img-responsive" src="{% static 'img/logo.png' %}">
                                 </a>
                             </div>
-                            <div id="navbar" class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav pull-right">
+                            <div id="navbar">
+                                <ul class="nav navbar-nav pull-right hidden-xs">
                                     <li><a href="/">HOME</a></li>
                                     <li><a href="/menu">MENU</a></li>
                                     <li><a href="/about">ABOUT</a></li>
                                 </ul>
+								<div class="btn-group navbar-menu pull-right hidden-sm hidden-md hidden-lg">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fa fa-bars" aria-hidden="true"></i>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="/">Home</a></li>
+										<li><a href="/menu">Menu</a></li>
+										<li><a href="/about">About</a></li>
+									</ul>
+								</div>
                             </div>
                         </div>
                     </nav>
