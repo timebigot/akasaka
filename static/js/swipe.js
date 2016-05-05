@@ -1,11 +1,9 @@
-$(document).ready(function() {
+$(document).ready(function() {  
+   $("#myCarousel").swiperight(function() {  
+      $("#myCarousel").carousel('prev');  
+    });  
+   $("#myCarousel").swipeleft(function() {  
+      $("#myCarousel").carousel('next');  
+   });  
+});  
   
-$(".carousel").swiperight(function() {
-    $(this).carousel('prev');
-});
-$(".carousel").swipeleft(function() {  
-    $(this).carousel('next');
-});
- 
-}); /* END document ready */
- 
