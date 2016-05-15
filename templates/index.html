@@ -1,15 +1,14 @@
 {% extends 'base2.html' %}
 {% load staticfiles %}
-{% load functions %}
 {% block content %}
 <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
@@ -66,21 +65,5 @@
         </a>
 		<div class="grad1"></div>		
     </div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="bootstrap-carousel.js"></script>
-    <script src="jquery.mobile.custom.min.js"></script>
-    <script>
-    $(document).ready(function() {
-		    $("#myCarousel").swiperight(function() {
-		    	$("#myCarousel").carousel('prev');
-		    });
-		    $("#myCarousel").swipeleft(function() {
-		    	$("#myCarousel").carousel('next');
-		    });
-			
-    });
-        
-    </script>
-
     <!-- /.carousel -->
     {% endblock %}
