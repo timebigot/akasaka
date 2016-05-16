@@ -1,10 +1,3 @@
-<script>
-  $(document).ready(function() {  
-  		 $("#myCarousel").swiperight(function() {  
-    		  $(this).carousel('prev');  
-	    		});  
-		   $("#myCarousel").swipeleft(function() {  
-		      $(this).carousel('next');  
-	   });  
-	});  
-</script>
+$("#myCarousel").carousel({
+  swipe: 30 // percent-per-second, default is 50. Pass false to disable swipe 
+});
