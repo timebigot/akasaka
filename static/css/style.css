@@ -33,6 +33,12 @@ header {
 .navbar-menu>.dropdown-menu>li>a:hover {
     color: black;
 }
+
+/*menu-nav*/
+.nav-tabs>li.active>a {
+    cursor: pointer !important;
+}
+
 /*body*/
 body {
     background-color: #eee;
