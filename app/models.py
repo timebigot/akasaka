@@ -11,7 +11,7 @@ menu_path = settings.STATIC_PATH + '/img/menu'
 class Menu(models.Model):
     item_name = models.CharField(max_length=30)
     detail = models.CharField(max_length=150, blank=True)
-    image = models.FileField(default='')
+    image = models.FileField(blank=True)
     price = models.CharField(max_length=10, blank=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     in_season = models.BooleanField(default=1)
