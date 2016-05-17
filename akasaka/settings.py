@@ -130,3 +130,6 @@ STATICFILES_DIRS = [
     STATIC_PATH,
     '/var/www/static/',
 ]
+
+MEDIA_URL = '/img/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/img/menu')

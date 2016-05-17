@@ -91,4 +91,4 @@ ENV/
 *.swp
 
 # windows thumb
-*.thumb
+Thumbs.db
