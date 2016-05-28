@@ -111,17 +111,17 @@ html, body {
 }
 
 .carousel .carousel-inner .bg1 {
-	background-image: url(13.jpg);
+	background-image: url(main1.jpg);
 	background-position: center center;
 }
 
 .carousel .carousel-inner .bg2 {
-	background-image: url(3.jpg);
+	background-image: url(main2.jpg);
 	background-position: center center;
 }
 
 .carousel .carousel-inner .bg3 {
-	background-image: url(18.jpg);
+	background-image: url(main3.jpg);
 	background-position: center center;
 }
 .input-group .form-control, .input-group-addon, .input-group-btn {
