@@ -111,17 +111,17 @@ html, body {
 }
 
 .carousel .carousel-inner .bg1 {
-	background-image: url(main.jpg);
+	background-image: url(13.jpg);
 	background-position: center center;
 }
 
 .carousel .carousel-inner .bg2 {
-	background-image: url(img8.jpg);
+	background-image: url(3.jpg);
 	background-position: center center;
 }
 
 .carousel .carousel-inner .bg3 {
-	background-image: url(img10.jpg);
+	background-image: url(18.jpg);
 	background-position: center center;
 }
 .input-group .form-control, .input-group-addon, .input-group-btn {
@@ -136,6 +136,7 @@ html, body {
 }
 .yelp {
 	font-size: 25px;
+	text-shadow: 3px 3px black;
 }
 .auth {
 	text-shadow: 3px 3px black;
