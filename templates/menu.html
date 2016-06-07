@@ -17,21 +17,23 @@
                 {% for item in cat.menu_set.all %}
                 {% load staticfiles %}
                 {% load functions %}
-                <li class="list-group-item">
-                    <div class="media">
-                        {% if item.image %}
-                        <div class="media-left">
-                            <a href="#imager" data-toggle="modal" data-target="#imager" data-image="img/{{ item.image }}" data-name="{{ item.item_name }}">
-                                <img class="media-object" src="img/{{ item.image }}">
-                            </a>
+                    {% if item.in_season %}
+                    <li class="list-group-item">
+                        <div class="media">
+                            {% if item.image %}
+                            <div class="media-left">
+                                <a href="#imager" data-toggle="modal" data-target="#imager" data-image="img/{{ item.image }}" data-name="{{ item.item_name }}">
+                                    <img class="media-object" src="img/{{ item.image }}">
+                                </a>
+                            </div>
+                            {% endif %}
+                            <div class="media-body">
+                                <h4 class="media-heading">{{ item.item_name }}</h4>
+                                <p>{{ item.detail }}</p>
+                            </div>
                         </div>
-                        {% endif %}
-                        <div class="media-body">
-                            <h4 class="media-heading">{{ item.item_name }}</h4>
-                            <p>{{ item.detail }}</p>
-                        </div>
-                    </div>
-                </li>
+                    </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
             {% endfor %}
