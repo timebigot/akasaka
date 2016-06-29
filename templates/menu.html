@@ -21,13 +21,11 @@
                     <li class="list-group-item">
                         <div class="media">
                             {% if item.image %}
-                            {% if not item.category.cat_name == 'Nigiri' and not item.category.cat_name == 'Maki' %}
                             <div class="media-left">
                                 <a href="#imager" data-toggle="modal" data-target="#imager" data-image="img/{{ item.image }}" data-name="{{ item.item_name }}">
                                     <img class="media-object" src="img/{{ item.image }}">
                                 </a>
                             </div>
-                            {% endif %}
                             {% endif %}
                             <div class="media-body">
                                 <h4 class="media-heading">{{ item.item_name }}</h4>
