@@ -111,7 +111,7 @@ html, body {
 }
 
 .carousel .carousel-inner .bg1 {
-	background-image: url(yo5.jpg);
+	background-image: url(happy.jpg);
 	background-position: center center;
 }
 
@@ -131,8 +131,20 @@ html, body {
 	margin-bottom: 40px;
 }
 .news {
-	margin-bottom: 28px;
-	text-shadow: 3px 3px black;
+	margin-bottom: 10px;
+	font-size: 38px;
+	color: red;
+	text-shadow: 1px 1px white
+}
+.hour {
+	margin-bottom: 30px;
+	font-size: 30px;
+	color: white;
+	
+}
+.letter {
+	font-size: 20px;
+	text-shadow: 1px 1px black
 }
 .yelp {
 	font-size: 25px;
