@@ -124,6 +124,11 @@ html, body {
 	background-image: url(yo2.jpg);
 	background-position: center center;
 }
+
+.carousel .carousel-inner .bg4 {
+	background-image: url(yo3.jpg);
+	background-position: center center;
+}
 .input-group .form-control, .input-group-addon, .input-group-btn {
 	margin-bottom: 40px;
 }
